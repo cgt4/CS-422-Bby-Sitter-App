@@ -1,4 +1,4 @@
-package com.example.bby_sitter;
+package com.example.bbysitter;
 
 import org.junit.Test;
 
