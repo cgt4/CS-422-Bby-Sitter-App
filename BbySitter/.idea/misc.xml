@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/TheKoopaKing/Documents/GitHub/CS-422-Bby-Sitter-App/BbySitter/app/src/main/res/drawable-v24/ic_baseline_arrow_back_24.xml" value="0.172" />
+        <entry key="..\:/Users/TheKoopaKing/Documents/GitHub/CS-422-Bby-Sitter-App/BbySitter/app/src/main/res/drawable-v24/ic_baseline_arrow_forward_24.xml" value="0.172" />
         <entry key="..\:/Users/TheKoopaKing/Documents/GitHub/CS-422-Bby-Sitter-App/BbySitter/app/src/main/res/layout/activity_chat.xml" value="0.16302083333333334" />
         <entry key="..\:/Users/TheKoopaKing/Documents/GitHub/CS-422-Bby-Sitter-App/BbySitter/app/src/main/res/layout/activity_main.xml" value="0.20471014492753623" />
         <entry key="..\:/Users/TheKoopaKing/Documents/GitHub/CS-422-Bby-Sitter-App/BbySitter/app/src/main/res/layout/activity_profile_matches.xml" value="0.20471014492753623" />
         <entry key="..\:/Users/TheKoopaKing/Documents/GitHub/CS-422-Bby-Sitter-App/BbySitter/app/src/main/res/layout/activity_reviews.xml" value="0.16302083333333334" />
         <entry key="..\:/Users/TheKoopaKing/Documents/GitHub/CS-422-Bby-Sitter-App/BbySitter/app/src/main/res/layout/activity_reviews_description_credentials.xml" value="0.16302083333333334" />
+        <entry key="..\:/Users/TheKoopaKing/Documents/GitHub/CS-422-Bby-Sitter-App/BbySitter/app/src/main/res/layout/fragment_profile.xml" value="0.20471014492753623" />
       </map>
     </option>
   </component>
