@@ -108,43 +108,30 @@
 
     <Button
         android:id="@+id/viewProfileButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="151dp"
+        android:layout_height="60dp"
         android:layout_marginStart="137dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="136dp"
-        android:layout_marginBottom="70dp"
+        android:backgroundTint="#415A70"
         android:text="View Profile"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonCPR" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="60dp"
-        android:src="@android:drawable/btn_dialog"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewProfileButton" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="127dp"
-        android:src="@android:drawable/checkbox_on_background"
+    <Button
+        android:id="@+id/messageButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="110dp"
+        android:backgroundTint="#415A70"
+        android:text="Message"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/viewProfileButton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewProfileButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

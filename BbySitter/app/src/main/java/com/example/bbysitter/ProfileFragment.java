@@ -36,6 +36,7 @@ public class ProfileFragment extends Fragment {
     Button cprButton;
     Button bsButton;
     Button carButton;
+    Button messageButton;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -72,7 +73,11 @@ public class ProfileFragment extends Fragment {
                 carButton.setBackgroundColor(Color.GRAY);
             if (certifications[arrayIndex][3] == false)
                 fiveYearsButton.setBackgroundColor(Color.GRAY);
-    }
+        }
+        messageButton = view.findViewById(R.id.messageButton);
+        messageButton.setOnClickListener(v -> {
+            startActivity(new Intent(this.getContext(), Chat.class));
+        });
 
         return view;
     }
