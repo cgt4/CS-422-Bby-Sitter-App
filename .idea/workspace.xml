@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4a2ee60-bec7-44b6-9850-00b847187e27" name="Changes" comment="" />
+    <list default="true" id="6e14b872-8ab6-4aa8-b4ac-1ccc9dd2b795" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/CS-422-Bby-Sitter-App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CS-422-Bby-Sitter-App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BbySitter/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BbySitter/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BbySitter/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BbySitter/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BbySitter/app/src/main/java/com/example/bbysitter/ReviewsDescriptionCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/BbySitter/app/src/main/java/com/example/bbysitter/ReviewsDescriptionCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BbySitter/app/src/main/res/layout/activity_reviews_description_credentials.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BbySitter/app/src/main/res/layout/activity_reviews_description_credentials.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +24,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2HMp02E6pe9oyhNre29nizg0QaG" />
   <component name="ProjectViewState">
@@ -25,12 +43,23 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f4a2ee60-bec7-44b6-9850-00b847187e27" name="Changes" comment="" />
+      <changelist id="6e14b872-8ab6-4aa8-b4ac-1ccc9dd2b795" name="Changes" comment="" />
       <created>1668104580431</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668104580431</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
