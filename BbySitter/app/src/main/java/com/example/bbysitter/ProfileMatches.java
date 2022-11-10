@@ -17,7 +17,6 @@ import java.time.LocalDate;
 
 public class ProfileMatches extends AppCompatActivity {
 
-    Button nextPage;
     ViewPager2 profileViewPager;
     ProfilePagerAdapter ppa;
     ImageButton leftArrowButton;
@@ -27,11 +26,6 @@ public class ProfileMatches extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_matches);
-
-        nextPage = findViewById(R.id.profileMatchesNextPageButton);
-        nextPage.setOnClickListener((View v) ->
-                startActivity(new Intent(this, ReviewsDescriptionCredentials.class))
-        );
 
         profileViewPager = findViewById(R.id.viewPager);
         ppa = new ProfilePagerAdapter(this);
