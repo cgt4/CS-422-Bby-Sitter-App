@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/babysitterImageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
         android:layout_marginStart="141dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="142dp"
@@ -27,9 +27,9 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="19dp"
+        android:layout_marginBottom="5dp"
         android:text="Name here"
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/babysitterRatingBar"
@@ -43,74 +43,82 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="85dp"
         android:layout_marginEnd="86dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayoutButtons"
+        android:clickable="false"
+        android:isIndicator="true"
+        android:longClickable="false"
+        android:stepSize="0.1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/babysitterNameTextView" />
 
-    <LinearLayout
-        android:id="@+id/linearLayoutButtons"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:orientation="horizontal"
-        android:paddingTop="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/viewProfileButton"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/buttonBS"
+        android:layout_width="65dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="6dp"
+        android:height="25dp"
+        android:backgroundTint="#415A70"
+        android:text="BS"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCPR"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/babysitterRatingBar">
+        app:layout_constraintTop_toBottomOf="@+id/babysitterRatingBar" />
 
-        <Button
-            android:id="@+id/buttonBS"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:height="25dp"
-            android:backgroundTint="#415A70"
-            android:text="BS" />
+    <Button
+        android:id="@+id/buttonCPR"
+        android:layout_width="65dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:height="25dp"
+        android:backgroundTint="#415A70"
+        android:text="Cpr"
+        app:iconTint="#335D83"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCAR"
+        app:layout_constraintStart_toEndOf="@+id/buttonBS"
+        app:layout_constraintTop_toBottomOf="@+id/babysitterRatingBar" />
 
-        <Button
-            android:id="@+id/buttonCPR"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:height="25dp"
-            android:backgroundTint="#415A70"
-            android:text="Cpr"
-            app:iconTint="#335D83" />
+    <Button
+        android:id="@+id/buttonCAR"
+        android:layout_width="65dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:height="25dp"
+        android:backgroundTint="#415A70"
+        android:text="car"
+        app:layout_constraintEnd_toStartOf="@+id/button5Y"
+        app:layout_constraintStart_toEndOf="@+id/buttonCPR"
+        app:layout_constraintTop_toBottomOf="@+id/babysitterRatingBar" />
 
-        <Button
-            android:id="@+id/buttonCAR"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:height="25dp"
-            android:backgroundTint="#415A70"
-            android:text="car" />
-
-        <Button
-            android:id="@+id/button5Y"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:height="25dp"
-            android:backgroundTint="@android:color/darker_gray"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:text="5y exp"
-            android:textAllCaps="false" />
-
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/button5Y"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="55dp"
+        android:height="25dp"
+        android:backgroundTint="#415A70"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="5y exp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCAR"
+        app:layout_constraintTop_toBottomOf="@+id/babysitterRatingBar" />
 
     <Button
         android:id="@+id/viewProfileButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="137dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="136dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="70dp"
         android:text="View Profile"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutButtons" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCPR" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -130,7 +138,7 @@
         android:layout_height="70dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="71dp"
-        android:layout_marginEnd="59dp"
+        android:layout_marginEnd="80dp"
         android:layout_marginBottom="127dp"
         android:src="@android:drawable/checkbox_on_background"
         app:layout_constraintBottom_toBottomOf="parent"
