@@ -6,10 +6,17 @@
         android:allowBackup="true"
         android:icon="@drawable/bbysitter_logo"
         android:label="bbysitter"
+        android:logo="@drawable/bbysitter_logo"
         android:roundIcon="@drawable/bbysitter_logo"
         android:supportsRtl="true"
-        android:logo="@drawable/bbysitter_logo"
         android:theme="@style/Theme.BbySitter">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".Chat"
             android:exported="false" />
@@ -23,13 +30,14 @@
             android:name=".ProfileMatches"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
