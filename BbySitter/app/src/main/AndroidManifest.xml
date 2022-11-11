@@ -4,10 +4,11 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/bbysitter_logo"
+        android:label="bbysitter"
+        android:roundIcon="@drawable/bbysitter_logo"
         android:supportsRtl="true"
+        android:logo="@drawable/bbysitter_logo"
         android:theme="@style/Theme.BbySitter">
         <activity
             android:name=".Chat"

@@ -22,7 +22,8 @@ public class ReviewsDescriptionCredentials extends AppCompatActivity {
         nextPage.setOnClickListener((View v) ->
                 startActivity(new Intent(this, Reviews.class))
         );
-        setContentView(R.layout.activity_reviews_description_credentials);
+
+//        setContentView(R.layout.activity_reviews_description_credentials);
 
 
     }
