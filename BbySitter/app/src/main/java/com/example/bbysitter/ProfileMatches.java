@@ -26,6 +26,7 @@ public class ProfileMatches extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_matches);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
         profileViewPager = findViewById(R.id.viewPager);
         ppa = new ProfilePagerAdapter(this);

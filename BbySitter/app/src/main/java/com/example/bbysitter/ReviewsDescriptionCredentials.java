@@ -17,6 +17,7 @@ public class ReviewsDescriptionCredentials extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reviews_description_credentials);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
         nextPage = findViewById(R.id.reviewsDescriptionCredentialsNextPageButton);
         nextPage.setOnClickListener((View v) ->
