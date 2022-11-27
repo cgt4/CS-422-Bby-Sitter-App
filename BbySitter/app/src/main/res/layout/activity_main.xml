@@ -174,7 +174,7 @@
                     android:layout_height="49dp"
                     android:layout_gravity="center"
                     android:gravity="center|top"
-                    android:text="T"
+                    android:text="Th"
                     android:textColor="#415A70"
                     android:textSize="25sp"></TextView>
             </LinearLayout>
@@ -235,11 +235,12 @@
                 android:layout_gravity="center"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:text="prefered time"
+                android:text="preffered time"
                 android:textColor="#415A70"
                 android:textSize="25sp">
             </TextView>
             <TimePicker
+                android:background="@layout/border"
                 android:id="@+id/datePicker1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -270,19 +271,25 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp">
 
-                <Button
+                <ToggleButton
                     android:id="@+id/button8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#415A70"
+                    android:backgroundTint="@drawable/toggle"
+                    android:textOff="CPR"
+                    android:textOn="CPR"
+                    android:textColor = "#FFFFFF"
                     android:text="Cpr"
                     app:iconTint="#335D83" />
 
-                <Button
+                <ToggleButton
                     android:id="@+id/button11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#415A70"
+                    android:backgroundTint="@drawable/toggle"
+                    android:textOff="BS"
+                    android:textOn="BS"
+                    android:textColor = "#FFFFFF"
                     android:text="BS" />
 
             </LinearLayout>
@@ -294,12 +301,24 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp">
 
-                <Button
+                <ToggleButton
                     android:id="@+id/button9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#415A70"
+                    android:backgroundTint="@drawable/toggle"
+                    android:textOff="CAR"
+                    android:textOn="CAR"
+                    android:textColor = "#FFFFFF"
                     android:text="car" />
+                <ToggleButton
+                    android:id="@+id/button11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@drawable/toggle"
+                    android:textOff="2+ kid"
+                    android:textOn="2+ kid"
+                    android:textColor = "#FFFFFF"
+                    android:text="2+ kids" />
             </LinearLayout>
 
             <LinearLayout
@@ -307,15 +326,26 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <Button
+                <ToggleButton
                     android:id="@+id/button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@android:color/darker_gray"
+                    android:backgroundTint="@drawable/toggle"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:text="5y exp"
+                    android:textOff="5Y EXP"
+                    android:textOn="5Y EXP"
+                    android:textColor = "#FFFFFF"
                     android:textAllCaps="false" />
+                <ToggleButton
+                    android:id="@+id/button12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@drawable/toggle"
+                    android:textOff="2Y EXP"
+                    android:textOn="2Y EXP"
+                    android:textColor = "#FFFFFF"
+                    />
             </LinearLayout>
 
 
