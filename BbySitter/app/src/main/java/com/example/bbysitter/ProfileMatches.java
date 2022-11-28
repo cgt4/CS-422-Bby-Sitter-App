@@ -9,6 +9,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -40,6 +41,22 @@ public class ProfileMatches extends AppCompatActivity {
         rightArrowButton.setOnClickListener((View v) ->
                 profileViewPager.setCurrentItem(profileViewPager.getCurrentItem()+1)
         );
+        //This disables left arrow on first profile and right arrow on last profile
+        profileViewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                super.onPageScrolled(position, positionOffset, positionOffsetPixels);
+                if(position == 0)
+                    leftArrowButton.setVisibility(View.INVISIBLE);
+                else
+                    leftArrowButton.setVisibility(View.VISIBLE);
+                if(position == 4)
+                    rightArrowButton.setVisibility(View.INVISIBLE);
+                else
+                    rightArrowButton.setVisibility(View.VISIBLE);
+                Log.i("viewpager position: ", position + "");
+            }
+        });
 
     }
 
