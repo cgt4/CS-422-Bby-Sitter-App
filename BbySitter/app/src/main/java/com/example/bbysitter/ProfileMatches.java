@@ -10,6 +10,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -22,6 +23,7 @@ public class ProfileMatches extends AppCompatActivity {
     ProfilePagerAdapter ppa;
     ImageButton leftArrowButton;
     ImageButton rightArrowButton;
+    static int lastScrolledToProfile = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class ProfileMatches extends AppCompatActivity {
         profileViewPager = findViewById(R.id.viewPager);
         ppa = new ProfilePagerAdapter(this);
         profileViewPager.setAdapter(ppa);
+        profileViewPager.setCurrentItem(lastScrolledToProfile, false);
 
         leftArrowButton = findViewById(R.id.previousProfileImageButton);
         rightArrowButton = findViewById(R.id.nextProfileImageButton);
@@ -55,9 +58,27 @@ public class ProfileMatches extends AppCompatActivity {
                 else
                     rightArrowButton.setVisibility(View.VISIBLE);
                 Log.i("viewpager position: ", position + "");
+                lastScrolledToProfile = position;
             }
         });
+    }
 
+    //Added this so backing out restarts the profile selection from position 0.
+    @Override
+    public void onBackPressed()
+    {
+        lastScrolledToProfile = 0;
+        super.onBackPressed();
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                lastScrolledToProfile = 0;
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private class ProfilePagerAdapter extends FragmentStateAdapter {
