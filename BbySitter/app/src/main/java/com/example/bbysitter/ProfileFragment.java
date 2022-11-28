@@ -15,6 +15,10 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
 public class ProfileFragment extends Fragment {
 
     int arrayIndex;
@@ -28,7 +32,7 @@ public class ProfileFragment extends Fragment {
         {false, false, true, true},
         {false, false, false, true},
         {false, false, false, false}};
-    TextView babysitterName;
+    TextView babysitterName, babysitterNameLocation;
     ImageView babysitterPicture;
     Button viewProfileButton;
     RatingBar rating;
@@ -37,6 +41,9 @@ public class ProfileFragment extends Fragment {
     Button bsButton;
     Button carButton;
     Button messageButton;
+
+
+    List<Integer> location = Arrays.asList(1, 2, 3, 4);
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -49,6 +56,13 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        babysitterNameLocation = view.findViewById(R.id.away);
+        Random rand = new Random();
+        int randomElement = location.get(rand.nextInt(location.size()));
+        String text = String.valueOf(randomElement) + ".0 miles away";
+        babysitterNameLocation.setText(text);
+
         babysitterName = view.findViewById(R.id.babysitterNameTextView);
         babysitterName.setText(names[arrayIndex]);
         babysitterPicture = view.findViewById(R.id.babysitterImageView);
