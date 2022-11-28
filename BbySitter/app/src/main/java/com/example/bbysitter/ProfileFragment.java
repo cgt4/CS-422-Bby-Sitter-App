@@ -66,13 +66,13 @@ public class ProfileFragment extends Fragment {
         fiveYearsButton = view.findViewById(R.id.button5Y);
         for(int j = 0; j < 4; j++) {
             if (certifications[arrayIndex][0] == false)
-                bsButton.setBackgroundColor(Color.GRAY);
+                bsButton.setVisibility(View.GONE);
             if (certifications[arrayIndex][1] == false)
-                cprButton.setBackgroundColor(Color.GRAY);
+                cprButton.setVisibility(View.GONE);
             if (certifications[arrayIndex][2] == false)
-                carButton.setBackgroundColor(Color.GRAY);
+                carButton.setVisibility(View.GONE);
             if (certifications[arrayIndex][3] == false)
-                fiveYearsButton.setBackgroundColor(Color.GRAY);
+                fiveYearsButton.setVisibility(View.GONE);
         }
         messageButton = view.findViewById(R.id.messageButton);
         messageButton.setOnClickListener(v -> {
