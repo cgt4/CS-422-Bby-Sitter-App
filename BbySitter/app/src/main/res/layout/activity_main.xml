@@ -240,7 +240,7 @@
                 android:layout_gravity="center"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:text="preffered time"
+                android:text="preferred time"
                 android:textColor="#415A70"
                 android:textSize="25sp">
             </TextView>
