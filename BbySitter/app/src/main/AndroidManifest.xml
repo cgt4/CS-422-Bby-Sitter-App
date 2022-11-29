@@ -11,6 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BbySitter">
         <activity
+            android:name=".booking"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="false">
             <meta-data
@@ -20,19 +27,19 @@
         <activity
             android:name=".Chat"
             android:exported="false"
-            android:parentActivityName=".ProfileMatches"/>
+            android:parentActivityName=".ProfileMatches" />
         <activity
             android:name=".Reviews"
             android:exported="false"
-            android:parentActivityName=".ReviewsDescriptionCredentials"/>
+            android:parentActivityName=".ReviewsDescriptionCredentials" />
         <activity
             android:name=".ReviewsDescriptionCredentials"
             android:exported="false"
-            android:parentActivityName=".ProfileMatches"/>
+            android:parentActivityName=".ProfileMatches" />
         <activity
             android:name=".ProfileMatches"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity2"
             android:exported="true">
@@ -41,7 +48,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
